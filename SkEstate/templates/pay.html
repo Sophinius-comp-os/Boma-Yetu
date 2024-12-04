@@ -1,0 +1,29 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c2y4qWy+9zd+cHq+8wDHioE8ksoKQ1KGfpDesE5xT0x7kkUBnC1zHY50+L2r47D" crossorigin="anonymous">
+
+<h2 class="text-center text-bg-success mt-0">Make a Payment</h2>
+<form method="POST" action="{% url 'stk' %}" class="needs-validation" novalidate >
+  {% csrf_token %}
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="mb-1">
+        <label for="phone" class="form-label">Phone Number:</label>
+        <input type="number" class="form-control" id="phone" name="phone" value="254" placeholder="Phone Number" required>
+      </div>
+      <div class="mb-1">
+        <label for="amount" class="form-label">Amount:</label>
+        <div class="input-group">
+          <span class="input-group-text">KSh</span>
+          <input type="number" class="form-control" id="amount" name="amount" placeholder="Amount" required>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit Payment</button>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-box">
+              <h4>Serices List</h4>
+              <div class="services-list">
+                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Property Management</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Commercial Real Estate</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Commercial Real Estate</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Product Management</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Property Rentals</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Community Forums</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Marketing</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="service-box">
+              <h4>Download Catalog</h4>
+              <div class="download-catalog">
+                <a href="#"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
+                <a href="#"><i class="bi bi-file-earmark-word"></i><span>Catalog DOC</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Have a Question?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+254 775 246 541</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:kidchurch773@gmail.com">kidchurch773@gmail.com</a></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'assets/img/services.jpeg' %}" alt="" class="img-fluid services-img">
+   <h3> Overview: </h3>
+                <p>The E-housing application is a platform that provides users with access to a wide range of housing options, including apartments, houses, and vacation rentals.</p>
+<h3>Key Features:</h3>
+              <p>The application offers a user-friendly interface that allows users to search for housing options based on location, price, and other criteria. It also includes features such as online booking, payment processing, and user reviews.</p>
+<h3>Target Audience:</h3>
+                <p>The application is designed for individuals and families who are looking for a convenient and efficient way to find housing options.</p>
+<h3>Technical Requirements:</h3>
+                <p>The application will be developed using modern technologies such as cloud computing, mobile app development, and data analytics.</p>
+<h3>Deployment: </h3>
+                <p>The application will be deployed on a cloud-based platform, which will ensure scalability, reliability, and security.</p>
+<h3>Maintenance and Support:</h3>
+                <p>The application will be regularly updated and maintained to ensure optimal performance. User support will be provided through a dedicated customer service team.</p>
+<h3> Pricing: </h3>
+                <p>The application will be offered on a subscription-based model, with different pricing plans based on the user's needs.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+
+{% endblock %}

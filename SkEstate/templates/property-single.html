@@ -1,0 +1,125 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+
+<!-- Real Estate 2 Section -->
+    <section id="real-estate-2" class="real-estate-2 section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="{% static 'assets/img/property-slide/property-slide-1.jpg' %}" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'assets/img/property-slide/property-slide-2.jpeg' %}" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'assets/img/property-slide/property-slide-3.jpeg' %}" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+py
+          <div class="col-lg-8" data-aos="fade-up">
+
+            <div class="portfolio-description">
+              <h2>These are  the property details</h2>
+              <p>
+                  Properties are the core entities in an E-Housing application. They represent real estate listings that users can search, view, and potentially rent or purchase.
+                </p>
+
+              <div class="testimonial-item">
+                <p>
+                  <span>Welcome to our property page and feel free to inquire about our properties in detail, am ready to serve y'all!
+                      Thank You!</span>
+                </p>
+                <div>
+                  <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Yulita Taliyu</h3>
+                  <h4>Agent</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Description -->
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#real-estate-2-tab1">Video</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#real-estate-2-tab2">Floor Plans</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#real-estate-2-tab3">Location</a></li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="real-estate-2-tab1">
+
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade" id="real-estate-2-tab2">
+                <img src="{% static 'assets/img/floor-plan.jpg' %}" alt="" class="img-fluid">
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade" id="real-estate-2-tab3">
+                <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6904.825877214723!2d36.82998474426629!3d-1.3231095414237473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11b11b6b890f%3A0x1f8cb2d50daefd79!2sSouth%20C%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1729854848376!5m2!1sen!2ske" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Tab 3 Content -->
+
+            </div><!-- End Tab Content -->
+
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Quick Summary</h3>
+              <ul>
+                <li><strong>Property ID:</strong> 1134n</li>
+                <li><strong>Location:</strong> South C,Nairobi, Kenya</li>
+                <li><strong>Property Type:</strong> House</li>
+                <li><strong>Status:</strong> Sale</li>
+                <li><strong>Area:</strong> <span>340m <sup>2</sup></span></li>
+                <li><strong>Beds:</strong> 4</li>
+                <li><strong>Baths:</strong> 1</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Real Estate 2 Section -->
+
+
+{% endblock %}
+
+
+
+

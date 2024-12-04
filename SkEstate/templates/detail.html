@@ -1,0 +1,38 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+
+    <table class="table table-info container table tab-content center">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>Action</th>
+
+    </tr>
+    {% for d in contact  %}
+
+
+      <tr>
+
+          <td>{{d.name}}</td>
+          <td>{{d.email}}</td>
+          <td>{{d.subject}}</td>
+          <td>{{d.message}}</td>
+          <td>
+              <a href="/edit/{{ d.id }}" class="btn btn-primary">Edit</a>
+              <a href="/delete/{{ d.id }}" class="btn btn-success">Delete</a>
+              <a href="{% url 'pay' %}" class="btn btn-danger">Pay</a>
+
+
+
+                  </td>
+      </tr>
+    {% endfor %}
+
+    </table>
+
+
+
+{% endblock %}

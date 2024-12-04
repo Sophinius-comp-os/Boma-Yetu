@@ -1,0 +1,83 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Agents</h2>
+        <p> Welcome our valid clients!Meet our valuable agents.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;" alt=""></div>
+              <div class="member-info">
+                <h4>Victor Korir</h4>
+                <span>Chief Executive Officer</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;" alt=""></div>
+              <div class="member-info">
+                <h4>Yulita Taliyu</h4>
+                <span>Customer Service Manager</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+  <div class="member">
+    <div class="pic">
+      <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;" alt="">
+    </div>
+    <div class="member-info">
+      <h4>Bonface K</h4>
+      <span>Rent Manager</span>
+    </div>
+  </div>
+</div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-5.jpg' %}" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;" alt=""></div>
+              <div class="member-info">
+                <h4>Sam Koech</h4>
+                <span>Sale manager<br></span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;" alt=""></div>
+              <div class="member-info">
+                <h4>Loree Kioko</h4>
+                <span>Property manager<br></span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Agents Section -->
+
+
+{% endblock %}

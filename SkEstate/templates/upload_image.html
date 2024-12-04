@@ -1,0 +1,19 @@
+{% extends 'starter.html' %}
+{% load static %}
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post" enctype="multipart/form-data"> 1
+                {% csrf_token %}
+                <h2 class="text-center mb-4">Upload Image</h2>
+                {{ form.as_p }}
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                    <a href="{% url 'image' %}" class="btn btn-secondary">Display Images</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

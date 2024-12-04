@@ -1,0 +1,42 @@
+{% extends 'starter.html' %}
+{% load static %}
+
+{% block body %}
+
+    <table class="table table-info table container mt-2">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Datetime</th>
+        <th>Offer</th>
+        <th>Agents</th>
+        <th>Message</th>
+        <th>Action</th>
+
+    </tr>
+    {% for x in booking  %}
+
+
+      <tr>
+
+          <td>{{x.name}}</td>
+          <td>{{x.email}}</td>
+          <td>{{x.phone}}</td>
+          <td>{{x.date}}</td>
+          <td>{{x.offer}}</td>
+          <td>{{x.agents}}<
+          <td>{{x.message}}</td>
+          <td>
+              <a href="/change/{{ x.id }}" class="btn btn-primary">Change</a>
+              <a href="/eliminate/{{ x.id }}" class="btn btn-success">Eliminate</a>
+              <a href="{% url 'pay' %}" class="btn btn-danger">Pay</a>
+
+
+                  </td>
+      </tr>
+    {% endfor %}
+
+    </table>
+
+{% endblock %}
